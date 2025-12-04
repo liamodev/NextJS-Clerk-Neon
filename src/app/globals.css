@@ -120,3 +120,59 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Clerk Component Styling Overrides */
+@layer components {
+  /* Modern 2025 SAAS styling for Clerk components */
+  .cl-card {
+    @apply shadow-xl border border-border rounded-lg;
+  }
+
+  .cl-button {
+    @apply transition-all duration-200;
+  }
+
+  .cl-buttonPrimary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm hover:shadow-md;
+  }
+
+  .cl-buttonSecondary {
+    @apply bg-secondary hover:bg-secondary/80 text-secondary-foreground;
+  }
+
+  .cl-input {
+    @apply border-border focus:border-primary focus:ring-primary rounded-md;
+  }
+
+  .cl-formButtonPrimary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground;
+  }
+
+  .cl-formFieldInput {
+    @apply border-border focus:border-primary focus:ring-primary;
+  }
+
+  .cl-socialButtonsBlockButton {
+    @apply border-border hover:bg-accent transition-colors duration-200;
+  }
+
+  .cl-headerTitle {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+
+  .cl-headerSubtitle {
+    @apply text-muted-foreground;
+  }
+
+  .cl-footerActionLink {
+    @apply text-primary hover:text-primary/80 transition-colors;
+  }
+
+  .cl-dividerLine {
+    @apply bg-border;
+  }
+
+  .cl-dividerText {
+    @apply text-muted-foreground;
+  }
+}
